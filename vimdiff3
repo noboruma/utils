@@ -1,0 +1,6 @@
+#!/bin/zsh
+BASE="$3"
+LOCAL="$2"
+REMOTE="$4"
+MERGED="$1"
+gvimdiff -M -f -d $MERGED $LOCAL $BASE $REMOTE -c "wincmd J" -c "set ro"
